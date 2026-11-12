@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Mechanical Keyboard — TADZAKI / LAB
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    >
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.webgpu.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+    }
+    </script>
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     LOADING SCREEN
+========================================== -->
+
+<div id="loading-screen">
+
+    <div class="loading-content">
+
+        <div class="loading-brand">
+            TADZAKI / LAB
+        </div>
+
+        <div class="loading-title">
+            MECHANICAL<br>
+            KEYBOARD
+        </div>
+
+        <div class="loading-status">
+
+            <span id="loading-status">
+                INITIALIZING
+            </span>
+
+            <span id="loading-percent">
+                0%
+            </span>
+
+        </div>
+
+        <div class="loading-line">
+
+            <div id="loading-progress"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     TOP BAR
+========================================== -->
+
+<header class="top-bar">
+
+    <div class="brand">
+
+        <div class="brand-name">
+            TADZAKI / LAB
+        </div>
+
+        <div class="brand-subtitle">
+            3D / INTERACTIVE OBJECT
+        </div>
+
+    </div>
+
+
+    <div class="top-right">
+        3D / WEBGPU / INTERACTION
+    </div>
+
+</header>
+
+
+
+<!-- ==========================================
+     PROJECT INFO
+========================================== -->
+
+<section class="project-info">
+
+    <div class="tech-label">
+        BLENDER / THREE.JS / WEBGPU / JAVASCRIPT
+    </div>
+
+
+    <h1>
+        MECHANICAL<br>
+        KEYBOARD
+    </h1>
+
+
+    <p>
+        An interactive 3D mechanical keyboard designed and
+        developed for the web.
+    </p>
+
+</section>
+
+
+
+<!-- ==========================================
+     3D SCENE
+========================================== -->
+
+<main id="scene-container"></main>
+
+
+
+<!-- ==========================================
+     KEY PRESS INDICATOR
+========================================== -->
+
+<div id="key-display">
+
+    <div class="key-label">
+        KEY PRESSED
+    </div>
+
+    <div class="key-line"></div>
+
+    <div class="key-name">
+        SPACE
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     BOTTOM INSTRUCTIONS
+========================================== -->
+
+<div class="instructions">
+
+    <div>
+
+        <span>
+            SCROLL
+        </span>
+
+        <strong>
+            ZOOM
+        </strong>
+
+    </div>
+
+
+    <div>
+
+        <span>
+            CLICK
+        </span>
+
+        <strong>
+            PRESS KEY
+        </strong>
+
+    </div>
+
+
+    <div>
+
+        <span>
+            OBJECT
+        </span>
+
+        <strong>
+            MECHANICAL KEYBOARD
+        </strong>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     PROJECT DETAILS
+========================================== -->
+
+<div class="project-details">
+
+    <div>
+
+        <span>
+            MODEL
+        </span>
+
+        <strong>
+            75% CUSTOM
+        </strong>
+
+    </div>
+
+
+    <div>
+
+        <span>
+            FORMAT
+        </span>
+
+        <strong>
+            GLB / GLTF
+        </strong>
+
+    </div>
+
+
+    <div>
+
+        <span>
+            ABOUT THE PROJECT
+        </span>
+
+        <p>
+            This project explores how a physical product
+            can become an interactive digital object.
+        </p>
+
+        <p>
+            The keyboard was modelled in Blender and
+            developed as a real-time 3D asset for the web.
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<script
+    type="module"
+    src="./main.js"
+></script>
+
+
+</body>
+</html>
